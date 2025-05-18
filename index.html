@@ -37,13 +37,30 @@
     p, li {
       font-size: 1.1rem;
     }
-    .card-container img {
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 10px 0;
+    }
+    .card {
+      display: inline-block;
       width: 60px;
       height: 90px;
-      margin: 5px;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: bold;
+      color: white;
     }
+    .red { background-color: #d70000; }
+    .green { background-color: #009900; }
+    .blue { background-color: #0066cc; }
+    .yellow { background-color: #ffcc00; color: #333; }
+    .black { background-color: #000; }
   </style>
 </head>
 <body>
@@ -64,18 +81,18 @@
 
   <h3>✅ وراق الأرقام:</h3>
   <div class="card-container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/UNO_card_5_red.svg" alt="Red 5">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/UNO_card_2_green.svg" alt="Green 2">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/UNO_card_9_blue.svg" alt="Blue 9">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/UNO_card_7_yellow.svg" alt="Yellow 7">
+    <span class="card red">5</span>
+    <span class="card green">2</span>
+    <span class="card blue">9</span>
+    <span class="card yellow">7</span>
   </div>
   <p>من 0 لـ 9، كل لون عنده وراق.</p>
 
   <h3>🌀 وراق الأكشن:</h3>
   <div class="card-container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/UNO_card_Skip_red.svg" alt="Red Skip">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/UNO_card_Reverse_blue.svg" alt="Blue Reverse">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/UNO_card_Draw_two_green.svg" alt="Green Draw Two">
+    <span class="card red">⏭️</span>
+    <span class="card blue">🔁</span>
+    <span class="card green">+2</span>
   </div>
   <ul>
     <li><strong>Skip (⏭️):</strong> اللاعب الجاي يفوت دوره</li>
@@ -85,8 +102,8 @@
 
   <h3>🎨 وراق الخاصة:</h3>
   <div class="card-container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/UNO_card_Wild.svg" alt="Wild">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/UNO_card_Wild_Draw_Four.svg" alt="Wild Draw Four">
+    <span class="card black">🎨</span>
+    <span class="card black">+4</span>
   </div>
   <ul>
     <li><strong>Wild (🎨):</strong> تختار اللون الجديد</li>
