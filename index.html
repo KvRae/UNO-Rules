@@ -41,9 +41,9 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      margin: 10px 0;
+      margin-top: 1rem;
     }
-    .card {
+    .number-card {
       display: inline-block;
       width: 60px;
       height: 90px;
@@ -52,15 +52,20 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.4rem;
-      font-weight: bold;
       color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
     }
     .red { background-color: #d70000; }
-    .green { background-color: #009900; }
-    .blue { background-color: #0066cc; }
-    .yellow { background-color: #ffcc00; color: #333; }
-    .black { background-color: #000; }
+    .green { background-color: #1e8c1e; }
+    .blue { background-color: #007bff; }
+    .yellow { background-color: #f9c20b; color: #222; }
+    .action-card-group img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin: 1rem 0;
+    }
   </style>
 </head>
 <body>
@@ -81,31 +86,21 @@
 
   <h3>✅ وراق الأرقام:</h3>
   <div class="card-container">
-    <span class="card red">5</span>
-    <span class="card green">2</span>
-    <span class="card blue">9</span>
-    <span class="card yellow">7</span>
+    <div class="number-card red">5</div>
+    <div class="number-card green">2</div>
+    <div class="number-card blue">9</div>
+    <div class="number-card yellow">7</div>
   </div>
   <p>من 0 لـ 9، كل لون عنده وراق.</p>
 
   <h3>🌀 وراق الأكشن:</h3>
-  <div class="card-container">
-    <span class="card red">⏭️</span>
-    <span class="card blue">🔁</span>
-    <span class="card green">+2</span>
+  <div class="action-card-group">
+    <img src="https://www.unorules.com/http://unorules.com/wp-content/uploads/2015/05/Uno-Action-Cards.jpg" alt="Uno Action Cards">
   </div>
   <ul>
     <li><strong>Skip (⏭️):</strong> اللاعب الجاي يفوت دوره</li>
     <li><strong>Reverse (🔁):</strong> تبديل في اتجاه اللعب</li>
     <li><strong>+2:</strong> اللاعب اللي بعدك يشد زوز ورقات ويفوت</li>
-  </ul>
-
-  <h3>🎨 وراق الخاصة:</h3>
-  <div class="card-container">
-    <span class="card black">🎨</span>
-    <span class="card black">+4</span>
-  </div>
-  <ul>
     <li><strong>Wild (🎨):</strong> تختار اللون الجديد</li>
     <li><strong>+4:</strong> تختار اللون واللاعب الجاي يشد 4 ورقات</li>
   </ul>
@@ -131,7 +126,7 @@
   <ul>
     <li>ورقة Reverse تلعب كيف Skip في حالة 2 لاعبين</li>
     <li>+4 تلعبها كان ما عندكش ورقة من نفس اللون</li>
-    <li>ورقة 0: وقت يتحط، كل لاعب يعطي يديه للي على يمينو</li>
+    <li>ورقة 0: وقت يتحط، كل لاعب يعطي يديه للي على يمينو (يدبدلوا الوراق)</li>
     <li>تنجموا تزيدوا قوانين منزلية</li>
   </ul>
 </body>
