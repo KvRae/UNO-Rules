@@ -43,33 +43,26 @@
       gap: 10px;
       margin-top: 1rem;
     }
-    .number-card {
-      display: inline-block;
+    .number-card img {
       width: 60px;
       height: 90px;
+      object-fit: cover;
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      font-size: 1.5rem;
-      font-weight: bold;
     }
-    .red { background-color: #d70000; }
-    .green { background-color: #1e8c1e; }
-    .blue { background-color: #007bff; }
-    .yellow { background-color: #f9c20b; color: #222; }
+    .action-card-group a {
+      display: inline-block;
+      margin: 0.5rem;
+    }
     .action-card-group img {
-      max-width: 100%;
+      max-width: 200px;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      margin: 1rem 0;
     }
   </style>
 </head>
 <body>
-  <h1>🃏 قوانين لعبة UNO (بالتونسي)</h1>
+  <h1>🃏 قوانين لعبة أونو باللهجة التونسية</h1>
 
   <h2>🎯 الهدف من اللعبة</h2>
   <p>تكمّل ورقاتك قبل صحابك. اللي يوصل لـ <strong>500 نقطة</strong> الأول، يربح اللعبة.</p>
@@ -86,16 +79,17 @@
 
   <h3>✅ وراق الأرقام:</h3>
   <div class="card-container">
-    <div class="number-card red">5</div>
-    <div class="number-card green">2</div>
-    <div class="number-card blue">9</div>
-    <div class="number-card yellow">7</div>
+    <a href="https://unorules.com/wp-content/uploads/2015/05/Uno-Number-Cards.jpg" target="_blank">
+      <img src="https://unorules.com/wp-content/uploads/2015/05/Uno-Number-Cards.jpg" alt="Uno Number Cards">
+    </a>
   </div>
   <p>من 0 لـ 9، كل لون عنده وراق.</p>
 
   <h3>🌀 وراق الأكشن:</h3>
   <div class="action-card-group">
-    <img src="https://www.unorules.com/http://unorules.com/wp-content/uploads/2015/05/Uno-Action-Cards.jpg" alt="Uno Action Cards">
+    <a href="https://www.unorules.com/http://unorules.com/wp-content/uploads/2015/05/Uno-Action-Cards.jpg" target="_blank">
+      <img src="https://www.unorules.com/http://unorules.com/wp-content/uploads/2015/05/Uno-Action-Cards.jpg" alt="Uno Action Cards">
+    </a>
   </div>
   <ul>
     <li><strong>Skip (⏭️):</strong> اللاعب الجاي يفوت دوره</li>
