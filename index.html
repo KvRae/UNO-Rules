@@ -4,38 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>قوانين لعبة UNO - تونسي</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
-      background-color: #fdfdfd;
-      color: #333;
-      padding: 20px;
-      max-width: 900px;
+      font-family: 'Cairo', sans-serif;
+      background: linear-gradient(to bottom, #fff, #f7f7f7);
+      color: #222;
+      padding: 2rem;
+      max-width: 960px;
       margin: auto;
-      line-height: 1.7;
-      direction: rtl;
-      text-align: right;
+      line-height: 1.8;
     }
     h1, h2, h3 {
       color: #d70000;
     }
-    .card {
-      display: inline-block;
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      border-bottom: 2px solid #d70000;
+      padding-bottom: 0.3rem;
+    }
+    ul, ol {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    p, li {
+      font-size: 1.1rem;
+    }
+    .card-container img {
       width: 60px;
       height: 90px;
-      border-radius: 8px;
       margin: 5px;
-      color: white;
-      font-weight: bold;
-      text-align: center;
-      line-height: 90px;
-      font-size: 1.2em;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
-    .red { background-color: #d70000; }
-    .green { background-color: #28a745; }
-    .blue { background-color: #007bff; }
-    .yellow { background-color: #ffc107; color: #333; }
-    .black { background-color: #222; }
   </style>
 </head>
 <body>
@@ -55,19 +63,19 @@
   <h2>🧩 أنواع الوراق</h2>
 
   <h3>✅ وراق الأرقام:</h3>
-  <div>
-    <div class="card red">5</div>
-    <div class="card green">2</div>
-    <div class="card blue">9</div>
-    <div class="card yellow">7</div>
+  <div class="card-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/UNO_card_5_red.svg" alt="Red 5">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/UNO_card_2_green.svg" alt="Green 2">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/UNO_card_9_blue.svg" alt="Blue 9">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/UNO_card_7_yellow.svg" alt="Yellow 7">
   </div>
   <p>من 0 لـ 9، كل لون عنده وراق.</p>
 
   <h3>🌀 وراق الأكشن:</h3>
-  <div>
-    <div class="card red">⏭️</div>
-    <div class="card blue">🔁</div>
-    <div class="card green">+2</div>
+  <div class="card-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e1/UNO_card_Skip_red.svg" alt="Red Skip">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/UNO_card_Reverse_blue.svg" alt="Blue Reverse">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/UNO_card_Draw_two_green.svg" alt="Green Draw Two">
   </div>
   <ul>
     <li><strong>Skip (⏭️):</strong> اللاعب الجاي يفوت دوره</li>
@@ -76,9 +84,9 @@
   </ul>
 
   <h3>🎨 وراق الخاصة:</h3>
-  <div>
-    <div class="card black">🎨</div>
-    <div class="card black">+4</div>
+  <div class="card-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f9/UNO_card_Wild.svg" alt="Wild">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/57/UNO_card_Wild_Draw_Four.svg" alt="Wild Draw Four">
   </div>
   <ul>
     <li><strong>Wild (🎨):</strong> تختار اللون الجديد</li>
@@ -106,6 +114,7 @@
   <ul>
     <li>ورقة Reverse تلعب كيف Skip في حالة 2 لاعبين</li>
     <li>+4 تلعبها كان ما عندكش ورقة من نفس اللون</li>
+    <li>ورقة 0: وقت يتحط، كل لاعب يعطي يديه للي على يمينو</li>
     <li>تنجموا تزيدوا قوانين منزلية</li>
   </ul>
 </body>
